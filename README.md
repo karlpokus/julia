@@ -6,3 +6,5 @@ This started out as a hack to mitigate SAP Business Objects lack of a friendly a
 Due to a lack of demand - julia was never used in production. This repo is more of a proof of concept.
 
 Note: This is a work in progress. I'll start importing all the files in the coming weeks.
+
+[demo](http://s.codepen.io/KarlPokus/debug/2ed99feba84c215d2e943419be8b9c4e) with dummy data.
