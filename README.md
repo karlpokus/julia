@@ -1,10 +1,15 @@
 ![julia](/julia.png?raw=true)
 
 # julia
-This started out as a hack to mitigate SAP Business Objects lack of a friendly api. It's based on BOs option to run a cron that sends an e-mail with the latest data as `.csv` in an attachment. Now, since parsing e-mails is madness I let [mailgun](https://www.mailgun.com/inbound-routing) handle this. The only thing left to do is have a server recieve the payload (at a route specified to mailgun), validate the sender, parse the `.csv` and display the html.
+A dashboard for global health care data - number of current patients, in, out, visits and waiting list - organized by facility and time.
 
-Due to a lack of demand - julia was never used in production. This repo is more of a proof of concept.
+# usage
+- Select organization
+- Select time frame
+- Optionally filter data
 
-Note: This is a work in progress. I'll start importing all the files in the coming weeks.
+# Project
+This is a company dashboard prototype made in 2015 for data-driven development. It contains a responsive UI, persistant filters and is easily extendable with more units and data points. The data source used is a cron in Business Objects that sends an e-mail with a `.csv` attachment - via [mailgun routing](https://www.mailgun.com/inbound-routing) for parsing - to a node.js server for calculations and presentation in html. Julia was never used in production. This is an archive.
 
-[demo](http://s.codepen.io/KarlPokus/debug/2ed99feba84c215d2e943419be8b9c4e) with dummy data.
+# Demo
+[Demo](http://s.codepen.io/KarlPokus/debug/2ed99feba84c215d2e943419be8b9c4e) with dummy data.
